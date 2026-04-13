@@ -65,10 +65,14 @@ export function InvitationExperience() {
         {hasOpened ? (
           <>
             <section id="ceremony-section" className="flex w-full justify-center">
+              <HaldiEvent />
+            </section>
+            <section className="flex w-full justify-center">
+              <MehandiEvent />
+            </section>
+            <section className="flex w-full justify-center">
               <WeddingCeremonyEvent />
             </section>
-            <HaldiEvent />
-            <MehandiEvent />
             <InvitationInside targetDate={weddingDate} onRSVP={handleRSVP} />
           </>
         ) : null}

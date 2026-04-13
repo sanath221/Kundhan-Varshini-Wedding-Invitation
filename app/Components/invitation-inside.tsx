@@ -14,18 +14,32 @@ export function InvitationInside({
   targetDate,
   onRSVP,
 }: InvitationInsideProps) {
+  const handleBackToTop = () => {
+    document.getElementById("ceremony-section")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
   return (
     <PlannerPoster
       imageSrc="/WhatsApp1.jpeg"
       imageAlt="Classic portrait of the couple"
       footer={
-        <div className="flex justify-center">
+        <div className="flex flex-col items-center gap-3">
           <button
             type="button"
             onClick={onRSVP}
             className="inline-flex min-w-[220px] justify-center rounded-full bg-[#b7724f] px-6 py-3 text-sm font-medium uppercase tracking-[0.22em] text-white transition hover:bg-[#a66343] focus:outline-none focus:ring-2 focus:ring-[#b7724f] focus:ring-offset-2"
           >
             Submit RSVP
+          </button>
+          <button
+            type="button"
+            onClick={handleBackToTop}
+            className="inline-flex min-w-[220px] justify-center rounded-full border border-[#c8ad80] bg-white/70 px-6 py-3 text-sm font-medium uppercase tracking-[0.22em] text-[#7a5732] transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-[#c8ad80] focus:ring-offset-2"
+          >
+            Back To Top
           </button>
         </div>
       }
