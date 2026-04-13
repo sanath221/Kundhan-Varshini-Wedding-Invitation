@@ -21,8 +21,8 @@ export function WeddingDetails({ onNext, onBack }: WeddingDetailsProps) {
             <p className="text-xs sm:text-sm uppercase tracking-[0.35em] text-white drop-shadow-lg">
               Our Special Day
             </p>
-            <h2 className="mt-1 sm:mt-2 max-w-xs font-serif text-xl sm:text-2xl md:text-4xl lg:text-5xl leading-tight text-white drop-shadow-lg">
-              Kundhan &amp; Varshini
+            <h2 className="mt-1 sm:mt-2 max-w-xs font-serif text-lg sm:text-2xl md:text-4xl lg:text-5xl leading-tight text-white drop-shadow-lg">
+            Kundhan &amp; Varshini
             </h2>
             <p className="mt-1 sm:mt-2 max-w-sm text-xs sm:text-sm leading-4 sm:leading-5 text-white drop-shadow-lg">
               Every moment with you is a treasure.
